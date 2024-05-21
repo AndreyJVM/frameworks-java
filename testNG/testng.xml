@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="First test suite">
+
+    <parameter name="Name" value="Andrey"/>
+
+    <test name="First BeforeXXX and AfterXXX tests">
+        <classes>
+            <class name="before.after.xxx.FirstTest"/>
+        </classes>
+    </test>
+
+    <test name="Second BeforeXXX and AfterXXX tests">
+        <classes>
+            <class name="before.after.xxx.SecondTest"/>
+        </classes>
+    </test>
+
+    <test name="Triangle tests">
+        <classes>
+            <class name="TriangleTest"/>
+            &lt;!&ndash;В следствии добавления нового класса, будут запущены все тесты, в данном случае 6&ndash;&gt;
+            <class name="AnotherOneTriangleTest"/>
+        </classes>
+    </test>
+
+    <test name="Parameters test">
+        <parameter name="Age" value="21"/>
+        <classes>
+            <class name="ParametersTest"/>
+        </classes>
+    </test>
+
+    <test name="Auxiliary parameters test">
+        <parameter name="Temperature" value="18"/>
+        <classes>
+            <class name="AuxiliaryParametersTest"/>
+        </classes>
+    </test>
+</suite>
