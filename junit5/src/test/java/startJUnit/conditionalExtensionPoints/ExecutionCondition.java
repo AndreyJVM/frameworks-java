@@ -1,4 +1,4 @@
-package conditionalExtensionPoints;
+package newInJUnit.conditionalExtensionPoints;
 
 import org.apiguardian.api.API;
 import org.junit.jupiter.api.extension.ConditionEvaluationResult;

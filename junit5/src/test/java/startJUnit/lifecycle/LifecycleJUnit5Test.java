@@ -1,4 +1,4 @@
-package lifecycle;
+package newInJUnit.lifecycle;
 
 import org.junit.jupiter.api.*;
 
