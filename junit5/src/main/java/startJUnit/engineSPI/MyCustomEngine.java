@@ -1,4 +1,4 @@
-package newInJUnit.engineSPI;
+package startJUnit.engineSPI;
 
 import org.junit.platform.engine.*;
 import org.junit.platform.engine.support.descriptor.EngineDescriptor;

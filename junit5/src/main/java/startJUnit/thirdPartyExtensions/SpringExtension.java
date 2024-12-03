@@ -1,4 +1,4 @@
-package newInJUnit.thirdPartyExtensions;
+package startJUnit.thirdPartyExtensions;
 
 import org.junit.jupiter.api.extension.*;
 

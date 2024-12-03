@@ -1,4 +1,4 @@
-package newInJUnit.DI;
+package startJUnit.DI;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.ParameterContext;
