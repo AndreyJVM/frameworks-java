@@ -1,9 +1,8 @@
 package startJUnit.metaAnnotations;
 
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-@Tag("functional")
+@Functional
 public class FunctionalTest {
 
     @Test
