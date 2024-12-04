@@ -52,10 +52,12 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire.plugin.version}</version>
                 <configuration>
-                    <properties>
-                        <includeTags>functional</includeTags>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                    <excludes>
                         <excludeTags>non-functional</excludeTags>
-                    </properties>
+                    </excludes>
                 </configuration>
                 <dependencies>
                     <dependency>

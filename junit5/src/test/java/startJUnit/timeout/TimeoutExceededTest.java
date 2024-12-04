@@ -15,7 +15,7 @@ public class TimeoutExceededTest {
   @Test
   void timeOutNotExceeded() {
     assertTimeout(Duration.ofMinutes(2), () -> {
-      // Perform task that takes less that 2 minutes
+      // Perform task that takes less than 2 minutes
     });
   }
 
