@@ -1,4 +1,4 @@
-package newInJUnit.timeout;
+package startJUnit.timeout;
 
 import org.junit.jupiter.api.Test;
 import java.time.Duration;

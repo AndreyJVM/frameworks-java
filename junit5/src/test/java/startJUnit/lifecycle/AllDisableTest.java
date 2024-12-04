@@ -1,4 +1,4 @@
-package newInJUnit.lifecycle;
+package startJUnit.lifecycle;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
