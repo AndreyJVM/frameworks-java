@@ -16,6 +16,11 @@
         <!--dependencies-->
         <junit.version>5.10.1</junit.version>
         <hamcrest.version>2.2</hamcrest.version>
+
+        <!--Plugins-->
+        <surefire.plugin.version>2.22.2</surefire.plugin.version>
+        <junit-platform-surefire-provider.version>1.2.0</junit-platform-surefire-provider.version>
+        <junit-jupiter-engine.version>5.11.3</junit-jupiter-engine.version>
     </properties>
 
     <dependencies>
@@ -40,5 +45,32 @@
             <version>${hamcrest.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.plugin.version}</version>
+                <configuration>
+                    <properties>
+                        <includeTags>functional</includeTags>
+                        <excludeTags>non-functional</excludeTags>
+                    </properties>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.junit.platform</groupId>
+                        <artifactId>junit-platform-surefire-provider</artifactId>
+                        <version>${junit-platform-surefire-provider.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.junit.jupiter</groupId>
+                        <artifactId>junit-jupiter-engine</artifactId>
+                        <version>${junit-jupiter-engine.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
